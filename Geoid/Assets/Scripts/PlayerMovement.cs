@@ -50,19 +50,19 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Keyboard.current.wKey.isPressed)
         {
-            playerRb.AddForce(Vector3.forward * 10f);
+            playerRb.AddForce(transform.forward * 10f);
         }
         if (Keyboard.current.sKey.isPressed)
         {
-            playerRb.AddForce(Vector3.back * 10f);
+            playerRb.AddForce(-transform.forward * 10f);
         }
         if (Keyboard.current.aKey.isPressed)
         {
-            playerRb.AddForce(Vector3.left * 10f);
+            playerRb.AddForce(-transform.right * 10f);
         }
         if (Keyboard.current.dKey.isPressed)
         {
-            playerRb.AddForce(Vector3.right * 10f);
+            playerRb.AddForce(transform.right * 10f);
         }
 
         //rotate player to face the planet with strongest gravity pull
