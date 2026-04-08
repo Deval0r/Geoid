@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 326781310}
   - component: {fileID: 326781309}
   - component: {fileID: 326781308}
+  - component: {fileID: 326781311}
   m_Layer: 0
   m_Name: Main Camera (1)
   m_TagString: MainCamera
@@ -256,6 +257,22 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &326781311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 326781306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2aabd5cdf362944b858418d6d97210e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraMovement
+  mouseSensitivity: 1
+  playerTransform: {fileID: 1228099880}
+  bobFrequency: 10
+  bobAmplitude: 0.05
 --- !u!1 &496435342
 GameObject:
   m_ObjectHideFlags: 0
